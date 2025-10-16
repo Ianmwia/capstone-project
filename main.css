@@ -10,3 +10,55 @@ body{
 main{
     flex-grow: 1;
 }
+/*nav*/
+nav{
+    padding: 10px;
+}
+/*main*/
+main{
+    margin: 0;
+}
+#links{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    padding: 10px;
+}
+.link-box{
+    height: 400px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid #ccc;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+@media only screen and (max-width: 768px){
+    #links{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media only screen and (max-width: 425px){
+    #links{
+        display: flex;
+        flex-direction: column;
+    }
+}
+.link-box.apod{
+    background-image: url(/img/apod.jpg);
+}
+.link-box.spacex{
+    background-image: url(/img/spacex.jpg);
+}
+.link-box.mars{
+    background-image: url(/img/mars-rover.jpg);
+}
+.link-box.iss{
+    background-image: url(/img/iss.avif);
+}
+/*footer*/
+footer{
+    padding: 10px;
+}
