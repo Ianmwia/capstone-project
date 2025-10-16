@@ -81,24 +81,44 @@ main{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    transition: transform 0.3s ease-in-out;
+}
+.link-box.apod:hover{
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(82, 119, 230, 0.9);
 }
 .link-box.spacex{
     background-image: url(/img/spacex.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    transition: transform 0.3s ease-in-out;
+}
+.link-box.spacex:hover{
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(82, 119, 230, 0.9);
 }
 .link-box.mars{
     background-image: url(/img/mars-rover.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+   transition: transform 0.3s ease-in-out;
+}
+.link-box.mars:hover{
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(82, 119, 230, 0.9);
 }
 .link-box.iss{
     background-image: url(/img/iss.avif);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    transition: transform 0.4s ease-in-out;
+}
+.link-box.iss:hover{
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(82, 119, 230, 0.9);
 }
 section
 /*footer*/
