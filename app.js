@@ -1,5 +1,9 @@
+//api key access
+require('dotenv').config();
+
+const nasaApiKey = process.env.NASA_API_KEY;
 //nasa apod
-const url2 = 'https://api.nasa.gov/planetary/apod?api_key=0S84atCP9gGZX0g6aosvx6M0tz8ocCyO4BWIy7ZP'
+const url2 = `https://api.nasa.gov/planetary/apod?api_key=${nasaApiKey}`
 
 fetch(url2)
 .then(response => response.json())
@@ -24,7 +28,7 @@ fetch(url)
 })
 
 //nasa mars over photos
-const url3 = 'https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&api_key=0S84atCP9gGZX0g6aosvx6M0tz8ocCyO4BWIy7ZP'
+const url3 = `https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&api_key=${nasaApiKey}`
 
 fetch(url3)
 .then(response => response.json())
