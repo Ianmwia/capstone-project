@@ -1,6 +1,10 @@
 *{
     padding: 0;
     margin: 0;
+    font-family: "Public Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
 }
 body{
     display: flex;
@@ -13,6 +17,25 @@ main{
 /*nav*/
 nav{
     padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+nav a{
+    text-decoration: none;
+    display: inline-block;
+    color: blue;
+    font-weight: bold;
+    transition: transform 0.3s ease-in-out;
+}
+nav a:hover{
+    transform: scale(1.03);
+    text-decoration: underline;
 }
 /*main*/
 main{
@@ -28,11 +51,18 @@ main{
     height: 400px;
     width: auto;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding: 20px;
+    box-sizing: border-box;
     border: 1px solid #ccc;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+#links a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 22px;
+    color: white;
 }
 @media only screen and (max-width: 768px){
     #links{
@@ -48,16 +78,29 @@ main{
 }
 .link-box.apod{
     background-image: url(/img/apod.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .link-box.spacex{
     background-image: url(/img/spacex.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .link-box.mars{
     background-image: url(/img/mars-rover.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .link-box.iss{
     background-image: url(/img/iss.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
+section
 /*footer*/
 footer{
     padding: 10px;
