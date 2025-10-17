@@ -1,0 +1,41 @@
+main{
+    padding: 20px;
+}
+/**/
+header{
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+header img{
+    width: 100%;
+    height: auto;
+    max-width: 800px;
+}
+header h1{
+    color: #1F2937;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+/**/
+.about-iss{
+    margin-bottom: 20px;
+}
+.where-iss{
+    margin-bottom: 10px;
+}
+/**/
+#iss-data{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+#iss-data h3{
+   font-weight: bold;
+   padding-bottom: 3px;
+}
+#iss-data p{
+   color: #1F2937;
+}
