@@ -14,7 +14,7 @@ function fetchDataInIntervals(){
     })
 }
 fetchDataInIntervals()
-setInterval(fetchDataInIntervals, 3000)
+setInterval(fetchDataInIntervals, 3600000)
 
 //dom
 const issLocation = document.getElementById('location')
